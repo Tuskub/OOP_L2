@@ -1,0 +1,76 @@
+{
+  "now": 1585745665,
+  "now_dt": "2020-04-01T12:54:25.743Z",
+  "info": {
+    "lat": 51.7682,
+    "lon": 55.097,
+    "url": "https://yandex.ru/pogoda/?lat=51.7682&lon=55.097"
+  },
+  "fact": {
+    "temp": 15,
+    "feels_like": 9,
+    "icon": "bkn_d",
+    "condition": "cloudy",
+    "wind_speed": 5,
+    "wind_gust": 9.7,
+    "wind_dir": "w",
+    "pressure_mm": 741,
+    "pressure_pa": 988,
+    "humidity": 24,
+    "daytime": "d",
+    "polar": false,
+    "season": "spring",
+    "obs_time": 1585744315
+  },
+  "forecast": {
+    "date": "2020-04-01",
+    "date_ts": 1585681200,
+    "week": 14,
+    "sunrise": "06:54",
+    "sunset": "19:53",
+    "moon_code": 12,
+    "moon_text": "first-quarter",
+    "parts": [
+      {
+        "part_name": "evening",
+        "temp_min": 5,
+        "temp_max": 15,
+        "temp_avg": 10,
+        "feels_like": 6,
+        "icon": "bkn_n",
+        "condition": "cloudy",
+        "daytime": "n",
+        "polar": false,
+        "wind_speed": 3.7,
+        "wind_gust": 9.7,
+        "wind_dir": "w",
+        "pressure_mm": 742,
+        "pressure_pa": 990,
+        "humidity": 58,
+        "prec_mm": 0,
+        "prec_period": 360,
+        "prec_prob": 0
+      },
+      {
+        "part_name": "night",
+        "temp_min": 0,
+        "temp_max": 4,
+        "temp_avg": 2,
+        "feels_like": -2,
+        "icon": "bkn_n",
+        "condition": "partly-cloudy",
+        "daytime": "n",
+        "polar": false,
+        "wind_speed": 2.7,
+        "wind_gust": 7.1,
+        "wind_dir": "nw",
+        "pressure_mm": 745,
+        "pressure_pa": 994,
+        "humidity": 71,
+        "prec_mm": 0,
+        "prec_period": 360,
+        "prec_prob": 0
+      }
+    ]
+  }
+}
