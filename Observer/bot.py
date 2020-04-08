@@ -5,7 +5,7 @@ from threading import Thread
 import schedule
 # Библиотеки для работы с Telegram API
 import telebot
-from telebot import apihelper
+from telebot import apihelper, types
 # Константы
 from constants.proxyconst import USERNAME, PASSWORD, IP, PORT
 from constants.bottoken import TOKEN
@@ -37,13 +37,15 @@ def help_message(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    print(message.chat.id)
+    markup = types.InlineKeyboardMarkup()
+    btn_my_site = types.InlineKeyboardButton(text='По данным Яндекс.Погоды', url='https://yandex.ru/pogoda/orenburg')
+    markup.add(btn_my_site)
     if message.text == 'Погода':
-        bot.send_message(message.chat.id, cs.display())
+        bot.send_message(message.chat.id, cs.display(), reply_markup=markup)
     elif message.text == 'Статистика':
-        bot.send_message(message.chat.id, stat.display())
+        bot.send_message(message.chat.id, stat.display(), reply_markup=markup)
     elif message.text == 'Прогноз':
-        bot.send_message(message.chat.id, forecast.display())
+        bot.send_message(message.chat.id, forecast.display(), reply_markup=markup)
 
 
 def start_bot():
@@ -51,8 +53,8 @@ def start_bot():
 
 
 def update_weather():
-    wd.measurements_update()
-    # bot.send_message(394068509, 'Саня')
+    # wd.measurements_update()
+    bot.send_message(394068509, 'Саня')
     # bot.send_message(430265734, 'Женя')
 
 
