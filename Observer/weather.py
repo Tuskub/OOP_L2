@@ -11,7 +11,7 @@ class WeatherData(Subject):
     __subscribers: List[Observer] = []
 
     def __init__(self):
-        self.__update_current_state()
+        # self.__update_current_state()
         return
 
     def register_observer(self, subscriber):
