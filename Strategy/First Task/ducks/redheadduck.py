@@ -1,7 +1,7 @@
 from ducks.duck import Duck
-from actions.fly.flywithwings import FlyWithWings
-from actions.quack.quack import Quack
-from actions.swim.likeduck import SwimLikeDuck
+from actions.fly.flyingtype import FlyWithWings
+from actions.quack.quackingtype import Quack
+from actions.swim.swimtypes import SwimLikeDuck
 
 
 class RedheadDuck(Duck):

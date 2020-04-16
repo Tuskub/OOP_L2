@@ -1,7 +1,7 @@
 from ducks.duck import Duck
-from actions.fly.flynoway import FlyNoWay
-from actions.quack.squeak import Squeak
-from actions.swim.likerubber import SwimLikeRubber
+from actions.fly.flyingtype import FlyNoWay
+from actions.quack.quackingtype import Squeak
+from actions.swim.swimtypes import SwimLikeRubber
 
 
 class RubberDuck(Duck):
