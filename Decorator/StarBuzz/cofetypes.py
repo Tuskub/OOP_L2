@@ -1,4 +1,4 @@
-from StarBuzz.beverage import Beverage
+from beverage import Beverage
 
 
 class HouseBlend(Beverage):
