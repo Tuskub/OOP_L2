@@ -2,28 +2,28 @@ from beverage import Beverage
 
 
 class HouseBlend(Beverage):
-    description = 'Домашний кофе'
+    _description = 'Домашний кофе'
 
     def cost(self):
         return 1.2
 
 
 class DarkRoast(Beverage):
-    description = 'Темный жареный'
+    _description = 'Темный жареный'
 
     def cost(self):
         return 1.1
 
 
 class Espresso(Beverage):
-    description = 'Эспрессо'
+    _description = 'Эспрессо'
 
     def cost(self):
         return 1.0
 
 
 class Decaf(Beverage):
-    description = 'Без кофеина'
+    _description = 'Без кофеина'
 
     def cost(self):
         return 1.3

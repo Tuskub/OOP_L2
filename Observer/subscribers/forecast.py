@@ -17,6 +17,7 @@ class Forecast(Observer, Display):
         with open('current_weather.json') as f:
             current_state = json.load(f)
         self.pressure_readings.append(current_state['fact']['pressure_mm'])
+        return
 
     def __forecast_weather(self):
         avr_pressure = sum(self.pressure_readings[:-1]) / (len(self.pressure_readings) - 1)

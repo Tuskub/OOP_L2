@@ -8,9 +8,9 @@ class CondimentDecorator(Beverage, ABC):
 
     def get_description(self):
         nums = {1: '', 2: 'Double', 3: 'Triple'}
-        collected_disc = Counter(self.collect_description())
+        collected_disc = Counter(self._collect_description())
         return ', '.join(map(lambda word: f"{nums.get(collected_disc[word],'Many')} {word}".strip(),
                              collected_disc))
 
-    def collect_description(self):
-        return [self.description] + self.beverage.collect_description()
+    def _collect_description(self):
+        return [self._description] + self.beverage._collect_description()

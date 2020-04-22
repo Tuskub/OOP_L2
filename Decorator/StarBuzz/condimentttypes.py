@@ -3,7 +3,7 @@ from condiment import CondimentDecorator
 
 
 class Milk(CondimentDecorator):
-    description = 'Milk'
+    _description = 'Milk'
     milk_cost = .3
 
     def __init__(self, beverage: Beverage):
@@ -14,7 +14,7 @@ class Milk(CondimentDecorator):
 
 
 class Mocha(CondimentDecorator):
-    description = 'Mocha'
+    _description = 'Mocha'
     mocha_cost = .23
 
     def __init__(self, beverage: Beverage):
@@ -25,7 +25,7 @@ class Mocha(CondimentDecorator):
 
 
 class Soy(CondimentDecorator):
-    description = 'Soy'
+    _description = 'Soy'
     soy_cost = .23
 
     def __init__(self, beverage: Beverage):
@@ -36,7 +36,7 @@ class Soy(CondimentDecorator):
 
 
 class Whip(CondimentDecorator):
-    description = 'Whip'
+    _description = 'Whip'
     whip_cost = .13
 
     def __init__(self, beverage: Beverage):
